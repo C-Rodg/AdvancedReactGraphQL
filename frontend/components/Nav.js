@@ -1,11 +1,19 @@
 // Libs
 import Link from 'next/link';
 
+import User from './User';
+
 // Styles
 import NavStyles from './styles/NavStyles';
 
 const Nav = () => (
 	<NavStyles>
+		<User>
+			{({ data: { me } }) => {
+				if (me) return <p>{me.name}</p>;
+				return null;
+			}}
+		</User>
 		<Link href="/items">
 			<a>Shop</a>
 		</Link>
