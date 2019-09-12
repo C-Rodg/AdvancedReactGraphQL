@@ -1,3 +1,5 @@
 # Advanced-React-GraphQL
 
-frontend
+Example of full stack application using React, GraphQL, Yoga, Prisma
+
+\*Sending Email 31
