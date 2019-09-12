@@ -1,10 +1,11 @@
 import CreateItem from '../components/CreateItem';
-import Reset from '../components/Reset';
+import PleaseSignIn from '../components/PleaseSignIn';
 
 const Sell = props => (
 	<div>
-		<p>Reset Your Password {props.query.resetToken}</p>
-		<Reset resetToken={props.query.resetToken} />
+		<PleaseSignIn>
+			<CreateItem />
+		</PleaseSignIn>
 	</div>
 );
 
